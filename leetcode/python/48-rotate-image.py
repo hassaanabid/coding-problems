@@ -36,35 +36,6 @@ class Solution:
         2. tranpose matrix
     """
         
-class Solution:
-    """
-        first row = 0, last row = n - 1
-        
-        90 degree clockwise rotation:
-            row 0 -> col n-1
-            row 1 -> col n-2
-            ...
-            row n-2 -> col 1
-            row n-1 -> col 0
-        
-        # transpose of a matrix is a new matrix whose rows are the columns of the original
-        # equvivalently: transpose of a matrix is an operator which flips a matrix over its diagonal
-        tranpose of a matrix:
-            row 0 -> col 0
-            row 1 -> col 1
-            ...
-            row n-2 -> col n-2
-            row n-1 -> col n-1
-        
-        hence, tranpose yields partial transformation
-            reverse each row for full transformation
-            i.e. col 0 -> col n-1 etc
-        
-        -> 90 degree anti-clockwise rotation
-        1. rerverse rows
-        2. tranpose matrix
-    """
-        
     def rotate(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
